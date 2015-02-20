@@ -30,6 +30,10 @@ exports.random = require('./lib/random');
 exports.finance = require('./lib/finance');
 exports.hacker = require('./lib/hacker');
 
+exports.addType = function(type, dfns) {
+  exports[type] = dfns;
+};
+
 var locales = exports.locales = require('./lib/locales');
 
 // default locale
